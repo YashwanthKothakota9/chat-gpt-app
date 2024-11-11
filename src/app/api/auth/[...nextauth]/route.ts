@@ -5,7 +5,7 @@ import { signIn } from "next-auth/react";
 const authOptions = {
     callbacks:{
         async signIn({profile}:{profile:{login:string}}){
-            return profile.login == "yashwanthkothakota9"
+            return profile.login === "YashwanthKothakota9"
         }
     } as unknown as CallbacksOptions,
     providers:[
